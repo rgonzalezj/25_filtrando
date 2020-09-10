@@ -12,9 +12,9 @@ Diciembre: 72000
 
 def filter(hash)
     filtered_hash = {}
-    hash.each do |month,value|
+    hash.each do |k,v|
         if value < 70000
-            filtered_hash[month]= value
+            filtered_hash[k]= v
         end
     end
     filtered_hash
